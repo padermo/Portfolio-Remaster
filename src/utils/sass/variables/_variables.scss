@@ -1,0 +1,15 @@
+$breakpoints: (
+  'viewport-small-mobile': 375px,
+  'viewport-large-mobile': 480px,
+  'viewport-small-tablet': 768px,
+  'viewport-large-tablet': 960px,
+  'viewport-small-ordenador': 1024px,
+);
+
+$size: (
+  'title-header': 2.5rem,
+  'title': 2rem,
+  'subtitle': 1.6rem,
+  'paragraph': 1rem,
+  'button': 1rem,
+);

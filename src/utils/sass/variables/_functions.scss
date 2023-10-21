@@ -1,0 +1,36 @@
+@use 'sass:map';
+@use './variables';
+
+@function size($size){
+  @return map.get(variables.$size, $size);
+}
+
+@mixin contentBlock(){
+  max-width: 1680px;
+  margin: 0 auto;
+}
+
+@mixin breakpoint($min:null, $max:null, $ext:null){
+  @if $min and map-has-key(variables.$breakpoints, $min) and $max and map-has-key(variables.$breakpoints, $max){
+    $max-width: map-get(variables.$breakpoints, $max);
+    $min-width: map-get(variables.$breakpoints, $min);
+
+    @media screen and (min-width: $min-width) and (max-width: calc($max-width - 1px)) {
+      @content;
+    }
+  }@else if $min and not $max and map-has-key(variables.$breakpoints, $min){
+    $min-width: map-get(variables.$breakpoints, $min);
+
+    @media screen and (min-width: $min-width) {
+      @content;
+    }
+  }@else if $max and not $min and map-has-key(variables.$breakpoints, $max){
+    $max-width: map-get(variables.$breakpoints, $max);
+
+    @media screen and (max-width: $max-width) {
+      @content;
+    }
+  }@else{
+    @warn "No se encontró el breakpoint en el mapa '#{variables.$breakpoint}'";
+  }
+}
