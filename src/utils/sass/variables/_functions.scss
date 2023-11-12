@@ -5,6 +5,10 @@
   @return map.get(variables.$size, $size);
 }
 
+@function color($color){
+  @return map.get(variables.$colors, $color);
+}
+
 @mixin contentBlock(){
   max-width: 1680px;
   margin: 0 auto;

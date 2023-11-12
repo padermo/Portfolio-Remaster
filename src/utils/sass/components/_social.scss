@@ -1,0 +1,55 @@
+@use '../variables/functions';
+@use '../variables/variables';
+
+.social{
+  display: flex;
+  gap: 10px;
+
+  &_link{
+    width: 40px;
+    height: 40px;
+    border-radius: 39% 61% 58% 42% / 47% 38% 62% 53%;
+    display: grid;
+    place-content: center;
+
+    &-linkedin{
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: functions.color('blue');
+        transform: translateY(-5px);
+        transition: all .3s ease-in-out;
+      }
+    }
+
+    &-whatsapp{
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: functions.color('green');
+        transform: translateY(-5px);
+        transition: all .3s ease-in-out;
+      }
+    }
+
+    &-email{
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: functions.color('orange');
+        transform: translateY(-5px);
+        transition: all .3s ease-in-out;
+      }
+    }
+
+    &-github{
+      transition: all .3s ease-in-out;
+      &:hover{
+        background-color: functions.color('black');
+        transform: translateY(-5px);
+        transition: all .3s ease-in-out;
+      }
+    }
+  }
+
+  &_icon{
+    display: block;
+  }
+}

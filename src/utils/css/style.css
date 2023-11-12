@@ -1,0 +1,157 @@
+.header {
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  max-width: 1680px;
+  margin: 0 auto;
+  background-color: #292B2E;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+.header_left {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.header_texts {
+  display: flex;
+  flex-direction: column;
+  color: #fff;
+  gap: 20px;
+}
+.header_title {
+  display: flex;
+  align-items: center;
+  column-gap: 10px;
+  cursor: default;
+}
+.header_name {
+  display: flex;
+  letter-spacing: 1px;
+}
+.header_name-0:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-1:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-2:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-3:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-4:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-5:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-6:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-7:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-8:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-9:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-10:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-11:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_name-12:hover {
+  color: salmon;
+  text-shadow: 0 0 10px;
+  transition: all 0.3s ease-in-out;
+}
+.header_subtitle {
+  display: flex;
+  column-gap: 10px;
+}
+.header_subtitle-web {
+  color: #318EAD;
+  letter-spacing: 1px;
+}
+.header_subtitle-mobile {
+  color: #F28705;
+  letter-spacing: 1px;
+}
+
+.social {
+  display: flex;
+  gap: 10px;
+}
+.social_link {
+  width: 40px;
+  height: 40px;
+  border-radius: 39% 61% 58% 42%/47% 38% 62% 53%;
+  display: grid;
+  place-content: center;
+}
+.social_link-linkedin {
+  transition: all 0.3s ease-in-out;
+}
+.social_link-linkedin:hover {
+  background-color: #318EAD;
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+.social_link-whatsapp {
+  transition: all 0.3s ease-in-out;
+}
+.social_link-whatsapp:hover {
+  background-color: #79A637;
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+.social_link-email {
+  transition: all 0.3s ease-in-out;
+}
+.social_link-email:hover {
+  background-color: #F28705;
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+.social_link-github {
+  transition: all 0.3s ease-in-out;
+}
+.social_link-github:hover {
+  background-color: #000;
+  transform: translateY(-5px);
+  transition: all 0.3s ease-in-out;
+}
+.social_icon {
+  display: block;
+}
+
+/*# sourceMappingURL=style.css.map */

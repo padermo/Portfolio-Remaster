@@ -1,0 +1,63 @@
+@use '../variables/functions';
+@use '../variables/variables';
+
+@mixin animateName{
+  @for $i from 0 through 12{
+    &-#{$i}:hover{
+      color: salmon;
+      text-shadow: 0 0 10px;
+      transition: all .3s ease-in-out;
+    }
+  }
+}
+
+.header{
+  width: 100%;
+  min-height: 100vh;
+  max-height: 100%;
+  @include functions.contentBlock();
+  background-color: functions.color('dark');
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+
+  &_left{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &_texts{
+    display: flex;
+    flex-direction: column;
+    color: functions.color('white');
+    gap: 20px;
+  }
+
+  &_title{
+    display: flex;
+    align-items: center;
+    column-gap: 10px;
+    cursor: default;
+  }
+
+  &_name{
+    display: flex;
+    letter-spacing: 1px;
+    @include animateName;
+  }
+  
+  &_subtitle{
+    display: flex;
+    column-gap: 10px;
+
+    &-web{
+      color: functions.color('blue');
+      letter-spacing: 1px;
+    }
+
+    &-mobile{
+      color: functions.color('orange');
+      letter-spacing: 1px;
+    }
+  }  
+}
